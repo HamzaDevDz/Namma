@@ -11,6 +11,7 @@
 .landingPage__presentation__img{
     position: absolute;
     object-fit: contain;
+    overflow: hidden;
 }
 .landingPage__presentation__imgBaghdad{
     width: 400px;
@@ -54,4 +55,18 @@
 .landingPage__presentation__texts__btn{
     align-self: center;
     width: 100%;
+}
+
+@media screen and (max-width: 1200px){
+    .landingPage__presentation__imgBaghdad{
+        display: none
+    }
+    .landingPage__presentation__texts{
+        transform: translateX(0);
+        height: 80%;
+        justify-content: space-evenly;
+    }
+    .landingPage__presentation__texts__title{
+        align-self: center;
+    }
 }

@@ -3,26 +3,29 @@ import './Header.css'
 import Avatar from "@mui/material/Avatar";
 import {useSelector} from "react-redux";
 import {selectUser} from "./userSlice";
+import {useLocation} from "react-router-dom";
 
 export function Header() {
+
+    console.log('Header Page')
+
     const user = useSelector(selectUser)
     const [theme, setTheme] = useState()
 
-    console.log(window.location.pathname)
+    let location = useLocation()
 
     useEffect(()=>{
-        if(window.location.pathname === '/landing'){
+        if(location.pathname === '/landing'){
             setTheme({
-                'color': '#333333',
-                // 'background': 'none'
+                'color': '#333333'
             })
         }else{
             setTheme({
                 'color': '#FFFDF4',
-                'background-color': '#333333'
+                'backgroundColor': '#333333'
             })
         }
-    }, [window.location.pathname])
+    }, [location])
 
     return(
         <div className={'header'} style={theme}>

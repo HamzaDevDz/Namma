@@ -1,0 +1,83 @@
+.navBar {
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 50px;
+    color: #FFFDF4;
+    /*padding-bottom: 10px;*/
+    z-index: 1;
+}
+.navBar__gender{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navBar__gender p{
+    position: relative;
+    margin-bottom: 10px;
+}
+.navBar__gender .navBar__gender__man{
+    margin-right: 10px;
+}
+.navBar__gender .navBar__gender__woman{
+    margin-left: 10px;
+}
+.navBar__gender p:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+.navBar__gender p:hover{
+    cursor: pointer;
+}
+.navBar__gender p:hover:before{
+    border-bottom: 1px solid #FFFDF4;
+}
+.navBar__manBox:hover ~ .navBar__gender__man{
+    background-color: black;
+}
+
+/*BOXES*/
+.navBar__gender__man:hover + .navBar__manBox, .navBar__manBox:hover{
+    display: flex;
+}
+.navBar__gender__woman:hover + .navBar__womanBox, .navBar__womanBox:hover{
+    display: flex;
+}
+.navBar__box{
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 25px;
+    width: 80%;
+    background-color: rgba(51,51,51,0.9);
+    color: #FFFDF4;
+    font-weight: lighter;
+    padding: 10px 0;
+}
+.navBar__box__choice{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navBar__box__choice__title{
+    margin-bottom: 10px;
+}
+.navBar__box__choice__types{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

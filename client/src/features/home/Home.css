@@ -1,0 +1,9 @@
+.home{
+    width: 100%;
+    background-color: #FFFDF4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}

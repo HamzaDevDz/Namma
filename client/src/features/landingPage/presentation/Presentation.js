@@ -1,7 +1,17 @@
-import React from "react"
+import React, {useCallback} from "react"
+import {useHistory} from "react-router-dom"
 import './Presentation.css'
 
 export const Presentation = () => {
+
+    console.log('Landing Page -> Presentation Page')
+
+    const history = useHistory()
+
+    const handleClick = useCallback(()=>{
+        history.push('/home')
+    },[])
+
     return(
         <div className={'landingPage__presentation'}>
             <div className={'landingPage__presentation__texts'}>
@@ -13,7 +23,7 @@ export const Presentation = () => {
                     vous vous sentiriez à nouveau en vie, à nouveau refait,<br/><br/>
                     vêtu de nos habits les plus divins.
                 </p>
-                <button className={'landingPage__presentation__texts__btn btnCustom'}>
+                <button className={'landingPage__presentation__texts__btn btnCustom'} onClick={handleClick}>
                     Voir
                 </button>
             </div>

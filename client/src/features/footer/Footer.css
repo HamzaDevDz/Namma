@@ -14,9 +14,18 @@
     flex-direction: row;
     align-items: center;
 }
+.footer__item:hover{
+    cursor: pointer;
+}
 .footer__item__icon{
     color: #FFFDF4 !important;
 }
 .footer__item__text{
     margin-left: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .footer__item__text{
+        display: none
+    }
 }

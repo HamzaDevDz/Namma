@@ -1,8 +1,18 @@
-import React from "react"
+import React, {useCallback} from "react"
 import './Services.css'
 import {Footer} from "../../footer/Footer";
+import {useHistory} from "react-router-dom";
 
 export function Services () {
+
+    console.log('Landing Page -> Services Page')
+
+    const history = useHistory()
+
+    const handleClick = useCallback(()=>{
+        history.push('/home')
+    },[])
+
     return(
         <div className={'landingPage__services'}>
             <div className={'landingPage__services__texts'}>
@@ -17,7 +27,7 @@ export function Services () {
                         Vous faire sentir unique
                     </p>
                 </div>
-                <button className={'landingPage__services__texts__btn btnCustom'}>
+                <button className={'landingPage__services__texts__btn btnCustom'} onClick={handleClick}>
                     Voir
                 </button>
             </div>
