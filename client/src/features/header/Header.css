@@ -1,0 +1,29 @@
+.header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    transition: 0.3s;
+}
+.header:hover{
+    background: #FFFDF4;
+}
+.header__logo:hover{
+    cursor: pointer;
+}
+.header__user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__user__btn{
+    margin-left: 20px;
+}
+.header__user__btn:hover{
+    cursor: pointer;
+}

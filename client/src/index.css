@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+.btnCustom{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #333333;
+    color: #FFFDF4;
+    transition: 0.3s;
+}
+.btnCustom:hover{
+    cursor: pointer;
+}

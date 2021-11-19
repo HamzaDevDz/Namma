@@ -1,0 +1,22 @@
+.footer{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #555555;
+    color: #FFFDF4;
+    z-index: 1;
+}
+.footer__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer__item__icon{
+    color: #FFFDF4 !important;
+}
+.footer__item__text{
+    margin-left: 10px;
+}
