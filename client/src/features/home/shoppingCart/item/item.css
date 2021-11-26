@@ -1,0 +1,49 @@
+.shoppingCard__items__item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    position: relative;
+}
+.shoppingCard__items__item__title{
+    width: 40%;
+}
+.shoppingCard__items__item__sizes,
+.shoppingCard__items__item__price,
+.shoppingCard__items__item__amount{
+    width: 30%;
+    position: relative;
+}
+.shoppingCard__items__item:hover{
+    /*background-color: #464646;*/
+}
+.shoppingCard__items__item__remove{
+    display: none !important;
+    position: absolute !important;
+    top: -10px !important;
+    right: 10px !important;
+    color: #FFFDF4 !important;
+    border-radius: 50px !important;
+    font-size: 1rem !important;
+}
+.shoppingCard__items__item__remove:hover{
+    cursor: pointer;
+}
+.shoppingCard__items__item:hover .shoppingCard__items__item__remove{
+    display: flex !important;
+}
+.shoppingCard__items__item__amount:hover > .shoppingCard__items__item__amount__change{
+    display: flex !important;
+}
+.shoppingCard__items__item__amount__change{
+    display: none !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    font-size: 1rem !important;
+}
+.shoppingCard__items__item__amount__change{
+    cursor: pointer;
+}

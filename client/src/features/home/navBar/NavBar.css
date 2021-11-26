@@ -46,6 +46,27 @@
     background-color: black;
 }
 
+.navBar__shoppingCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    position: absolute;
+    right: 30px;
+}
+.navBar__shoppingCard__length{
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+.navBar__shoppingCard__icon{
+    font-size: 1rem !important;
+}
+.navBar__shoppingCard:hover{
+    cursor: pointer;
+    background-color: #535353;
+}
+
 /*BOXES*/
 .navBar__gender__man:hover + .navBar__manBox, .navBar__manBox:hover{
     display: flex;
