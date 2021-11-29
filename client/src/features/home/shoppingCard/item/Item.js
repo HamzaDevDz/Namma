@@ -1,7 +1,6 @@
 import React from 'react'
 import './item.css'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import {useDispatch} from "react-redux";
 import {remove__fromShoppingCard} from "../shoppingCardSlice";
 

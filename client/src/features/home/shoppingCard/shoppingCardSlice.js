@@ -54,4 +54,5 @@ export const selectTotalPrice = state => {
 }
 export const selectOpenShoppingCard = state => state.shoppingCard.open
 
+
 export default shoppingCardSlice.reducer;

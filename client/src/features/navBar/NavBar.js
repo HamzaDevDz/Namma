@@ -1,10 +1,11 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {useEffect} from 'react'
 import './NavBar.css'
 import Man from "./Man.js";
 import Woman from "./Woman.js";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {useDispatch, useSelector} from "react-redux";
-import {selectLengthShoppingCard, toggle__openShoppingCard} from "../shoppingCart/shoppingCardSlice";
+import {selectLengthShoppingCard, toggle__openShoppingCard} from "../home/shoppingCard/shoppingCardSlice";
+import {useLocation} from "react-router-dom";
 
 function NavBar() {
 
@@ -14,8 +15,18 @@ function NavBar() {
 
     const lengthShoppingCard = useSelector(selectLengthShoppingCard)
 
+    let location = useLocation()
+
+    useEffect(()=>{
+        if(location.pathname === '/landing'){
+            document.querySelector('.navBar').style.display = 'none'
+        }else{
+            document.querySelector('.navBar').style.display = 'flex'
+        }
+    }, [location])
+
     return (
-        <div className="navBar">
+        <div className="navBar" >
             <div className="navBar__gender">
                 <p className="navBar__gender__man">
                     Homme
