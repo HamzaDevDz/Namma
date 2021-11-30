@@ -1,0 +1,57 @@
+.displayDress__success__meta__sizesAndColors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.displayDress__success__meta__sizesAndColors:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #333333;
+}
+.displayDress__success__meta__sizesAndColors__sizes,
+.displayDress__success__meta__sizesAndColors__colors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.displayDress__success__meta__sizesAndColors__sizes{
+    margin-bottom: 30px;
+}
+.displayDress__success__meta__sizesAndColors__sizes__title,
+.displayDress__success__meta__sizesAndColors__colors__title{
+    margin-right: 20px;
+}
+.displayDress__success__meta__sizesAndColors__sizes__size,
+.displayDress__success__meta__sizesAndColors__colors__color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.displayDress__success__meta__sizesAndColors__sizes__size__selectArea,
+.displayDress__success__meta__sizesAndColors__colors__color__selectArea{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.displayDress__success__meta__sizesAndColors__sizes__size__selectArea:hover,
+.displayDress__success__meta__sizesAndColors__colors__color__selectArea:hover{
+    cursor: pointer;
+}
+.displayDress__success__meta__sizesAndColors__sizes__size__title,
+.displayDress__success__meta__sizesAndColors__colors__color__title{
+    font-size: 0.8rem;
+}
+.selectedSize{
+    background-color: #535353;
+}
