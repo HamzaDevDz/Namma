@@ -30,8 +30,8 @@ function ShoppingCard() {
                         {
                             shoppingCard.map(item => <Item id={item.__id}
                                                            title={item.title}
-                                                           amount={item.amount}
-                                                           sizes={item.sizes}
+                                                           size={item.size}
+                                                           color={item.color}
                                                            price={item.price}
                             />)
                         }

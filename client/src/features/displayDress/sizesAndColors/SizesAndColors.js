@@ -5,6 +5,8 @@ import {selectSelectedColor, setSelectedColor, setSelectedSize} from "../display
 
 function SizesAndColors({sizesAndColors}) {
 
+    console.log("SizesAndColors Page ! ----------")
+
     const dispatch = useDispatch()
 
     const [colors, setColors] = useState([])

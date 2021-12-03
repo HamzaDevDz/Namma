@@ -6,6 +6,7 @@ import {Header} from "./features/header/Header";
 import {Home} from "./features/home/Home";
 import NavBar from "./features/navBar/NavBar";
 import DisplayDress from "./features/displayDress/DisplayDress";
+import ShoppingCard from "./features/home/shoppingCard/ShoppingCard";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Router>
               <Header />
               <NavBar />
+              <ShoppingCard />
               <Switch>
                   <Route exact path={'/landing'} component={LandingPage} />
                   <Route exact path={'/home'} component={Home} />

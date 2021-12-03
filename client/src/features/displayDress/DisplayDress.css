@@ -1,3 +1,7 @@
+.displayDress{
+    transform: translateY(80px);
+    background-color: #FFFDF4;
+}
 .displayDress__loading,
 .displayDress__error{
     display: flex;
@@ -7,10 +11,9 @@
     height: 100vh;
 }
 .displayDress__success{
-    transform: translateY(80px);
     /*background-color: #535353;*/
     width: 100%;
-    min-height: calc(100vh - 80px);
+   height: calc(100vh - 80px);
     display: flex;
     flex-direction: row;
     align-items: center;

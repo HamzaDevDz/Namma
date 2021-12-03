@@ -24,14 +24,14 @@ const initialState = {
             pathPicture: './landingPage/baghdad.png',
         },
         {
-            __id: 1,
+            __id: 4,
             title: 'Titre du vêtement',
             description: 'Parfait pour être classe',
             price: 5500,
             pathPicture: './landingPage/baghdad.png',
         },
         {
-            __id: 1,
+            __id: 5,
             title: 'Titre du vêtement',
             description: 'Parfait pour être classe',
             price: 5500,

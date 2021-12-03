@@ -9,7 +9,7 @@ import {useLocation} from "react-router-dom";
 
 function NavBar() {
 
-    console.log('NavBar Page')
+    console.log('NavBar Page ---------- !')
 
     const dispatch = useDispatch()
 
@@ -17,13 +17,13 @@ function NavBar() {
 
     let location = useLocation()
 
-    useEffect(()=>{
-        if(location.pathname === '/landing'){
-            document.querySelector('.navBar').style.display = 'none'
-        }else{
-            document.querySelector('.navBar').style.display = 'flex'
-        }
-    }, [location])
+    // useEffect(()=>{
+    //     if(location.pathname === '/landing'){
+    //         document.querySelector('.navBar').style.display = 'none'
+    //     }else{
+    //         document.querySelector('.navBar').style.display = 'flex'
+    //     }
+    // }, [location])
 
     return (
         <div className="navBar" >

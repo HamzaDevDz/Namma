@@ -3,10 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     shoppingCard: [
         {
-            __id: 1,
+            __id: "0004582",
             title: 'AMI Paris',
-            amount: 2,
-            sizes: ['S'],
+            size: 'S',
+            color: 'Noir',
             price: 450
         }
     ],
@@ -48,7 +48,7 @@ export const selectTotalPrice = state => {
     if(state.shoppingCard.shoppingCard.length === 0) return
     let totalPrice = 0
     state.shoppingCard.shoppingCard.forEach(item => {
-        totalPrice += item.price * item.amount
+        totalPrice += item.price
     })
     return totalPrice
 }

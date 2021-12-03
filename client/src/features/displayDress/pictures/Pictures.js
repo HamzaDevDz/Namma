@@ -3,6 +3,8 @@ import "./Pictures.css"
 
 function Pictures({pathPictures}) {
 
+    console.log("Pictures Page ! ----------")
+
     return (
         <div className={"displayDress__success__pictures"}>
             {

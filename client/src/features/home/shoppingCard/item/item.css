@@ -10,14 +10,12 @@
 .shoppingCard__items__item__title{
     width: 40%;
 }
-.shoppingCard__items__item__sizes,
+.shoppingCard__items__item__size,
 .shoppingCard__items__item__price,
-.shoppingCard__items__item__amount{
+.shoppingCard__items__item__color{
     width: 30%;
     position: relative;
-}
-.shoppingCard__items__item:hover{
-    /*background-color: #464646;*/
+    /*background-color: #FFFDF4;*/
 }
 .shoppingCard__items__item__remove{
     display: none !important;
@@ -34,16 +32,16 @@
 .shoppingCard__items__item:hover .shoppingCard__items__item__remove{
     display: flex !important;
 }
-.shoppingCard__items__item__amount:hover > .shoppingCard__items__item__amount__change{
-    display: flex !important;
-}
-.shoppingCard__items__item__amount__change{
-    display: none !important;
-    position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
-    font-size: 1rem !important;
-}
-.shoppingCard__items__item__amount__change{
-    cursor: pointer;
-}
+/*.shoppingCard__items__item__amount:hover > .shoppingCard__items__item__amount__change{*/
+/*    display: flex !important;*/
+/*}*/
+/*.shoppingCard__items__item__amount__change{*/
+/*    display: none !important;*/
+/*    position: absolute !important;*/
+/*    top: 0 !important;*/
+/*    right: 0 !important;*/
+/*    font-size: 1rem !important;*/
+/*}*/
+/*.shoppingCard__items__item__amount__change{*/
+/*    cursor: pointer;*/
+/*}*/

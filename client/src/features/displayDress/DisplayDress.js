@@ -10,9 +10,7 @@ import {selectDisplayDress, selectStatusDisplayDress} from "./displayDressSlice"
 
 function DisplayDress() {
 
-    console.log('DisplayDress Page')
-
-    const {idDress} = useParams()
+    console.log('DisplayDress Page ! ----------')
 
     const displayDress = useSelector(selectDisplayDress)
     const statusDisplayDress = useSelector(selectStatusDisplayDress)
@@ -27,7 +25,7 @@ function DisplayDress() {
                     :
                     displayDress.length === 0 ?
                         <div className={"displayDress__error"}>
-                            L'article n'a pas été chargé !
+                            Aucun contenu disponible !
                         </div>
                         :
                         <div className={"displayDress__success"}>
@@ -39,7 +37,7 @@ function DisplayDress() {
                                     <p className={"displayDress__success__meta__information__price"}>{displayDress.price} DA</p>
                                 </div>
                                 <SizesAndColors sizesAndColors={displayDress.sizesAndColors} />
-                                <Button idDress={idDress} />
+                                <Button />
                             </div>
                         </div>
             }
