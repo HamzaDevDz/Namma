@@ -3,7 +3,7 @@ import './Header.css'
 import Avatar from "@mui/material/Avatar";
 import {useSelector} from "react-redux";
 import {selectUser} from "./userSlice";
-import {useLocation} from "react-router-dom";
+import {useLocation, useHistory} from "react-router-dom";
 
 export function Header() {
 
@@ -13,6 +13,7 @@ export function Header() {
     const [theme, setTheme] = useState()
 
     let location = useLocation()
+    const history = useHistory()
 
     useEffect(()=>{
         if(location.pathname === '/landing'){
@@ -29,7 +30,7 @@ export function Header() {
 
     return(
         <div className={'header'} style={theme}>
-            <div className={'header__logo'}>
+            <div className={'header__logo'} onClick={()=>history.push('/home')}>
                 <p className={'header__logo__text'}>
                     NAMMA
                 </p>

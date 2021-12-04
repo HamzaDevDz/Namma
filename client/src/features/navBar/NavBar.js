@@ -4,7 +4,7 @@ import Man from "./Man.js";
 import Woman from "./Woman.js";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {useDispatch, useSelector} from "react-redux";
-import {selectLengthShoppingCard, toggle__openShoppingCard} from "../home/shoppingCard/shoppingCardSlice";
+import {selectLengthShoppingCard, toggle__openShoppingCard} from "../shoppingCard/shoppingCardSlice";
 import {useLocation} from "react-router-dom";
 
 function NavBar() {

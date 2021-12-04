@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import userReducer from '../features/header/userSlice';
-import shoppingCardReducer from '../features/home/shoppingCard/shoppingCardSlice'
+import shoppingCardReducer from '../features/shoppingCard/shoppingCardSlice'
 import productsReducer from "../features/home/products/productsSlice"
 import displayDressReducer from "../features/displayDress/displayDressSlice"
 

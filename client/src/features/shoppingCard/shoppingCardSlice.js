@@ -3,8 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     shoppingCard: [
         {
-            __id: "0004582",
+            __id: "1",
+            pathPicture: "./landingPage/baghdad.png",
             title: 'AMI Paris',
+            description: "Description de cet article avec une plume chebba !",
             size: 'S',
             color: 'Noir',
             price: 450

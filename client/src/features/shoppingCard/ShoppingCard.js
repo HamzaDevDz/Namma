@@ -3,6 +3,7 @@ import './ShoppingCard.css'
 import {useDispatch, useSelector} from "react-redux";
 import {clear__shoppingCard, selectOpenShoppingCard, selectShoppingCard, selectTotalPrice} from "./shoppingCardSlice";
 import Item from "./item/Item";
+import {useHistory} from "react-router-dom";
 
 function ShoppingCard() {
 
@@ -11,6 +12,8 @@ function ShoppingCard() {
     const shoppingCard = useSelector(selectShoppingCard)
     const totalPrice = useSelector(selectTotalPrice)
     const openShoppingCard = useSelector(selectOpenShoppingCard)
+
+    const history = useHistory()
 
     useEffect(()=>{
         if(!openShoppingCard){
@@ -40,7 +43,9 @@ function ShoppingCard() {
                             <p className="shoppingCard__items__totalPrice__price">{totalPrice} DA</p>
                         </div>
                         <div className="shoppingCard__items__btn">
-                            <button className={'shoppingCard__items__btn__command btnCustom'}>Commander</button>
+                            <button className={'shoppingCard__items__btn__command btnCustom'}
+                                    onClick={() => history.push("/command")}
+                            >Commander</button>
                             <button className="shoppingCard__items__btn__clear btnCustom"
                                     onClick={()=>{
                                         dispatch(clear__shoppingCard())

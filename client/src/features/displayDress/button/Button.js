@@ -5,7 +5,7 @@ import {
     add__toShoppingCard,
     remove__fromShoppingCard,
     selectShoppingCard
-} from "../../home/shoppingCard/shoppingCardSlice";
+} from "../../shoppingCard/shoppingCardSlice";
 import {selectDisplayDress, selectSelectedColor, selectSelectedSize} from "../displayDressSlice";
 
 function Button() {
@@ -29,7 +29,9 @@ function Button() {
     const handleAddShoppingCard = function() {
         const newItem = {
             __id: displayDress.__id,
+            pathPicture: displayDress.pathPictures[0],
             title: displayDress.title,
+            description: displayDress.description,
             size: selectedSize,
             color: selectedColor,
             price: displayDress.price

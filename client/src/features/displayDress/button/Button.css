@@ -1,0 +1,9 @@
+.displayDress__btn__remove{
+    background-color: #FFFDF4;
+    border: 1px solid #535353;
+    color: #535353;
+}
+.displayDress__btn__remove:hover{
+    background-color: #535353;
+    color: #FFFDF4;
+}

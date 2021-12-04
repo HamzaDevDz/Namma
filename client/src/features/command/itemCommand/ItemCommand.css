@@ -1,0 +1,58 @@
+.command__resume__shoppingCard__container__itemCommand{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.command__resume__shoppingCard__container__itemCommand__picture{
+    object-fit: contain;
+    max-height: 150px;
+}
+.command__resume__shoppingCard__container__itemCommand__information{
+    display: flex;
+    flex-direction: column;
+}
+.command__resume__shoppingCard__container__itemCommand__information__title{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.command__resume__shoppingCard__container__itemCommand__information__description{
+    font-size: 0.8rem;
+}
+.command__resume__shoppingCard__container__itemCommand__price{
+    font-weight: bolder;
+    /*width: 100px;*/
+    text-align: center;
+}
+.command__resume__shoppingCard__container__itemCommand__params{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+.command__resume__shoppingCard__container__itemCommand__params__size,
+.command__resume__shoppingCard__container__itemCommand__params__color{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.command__resume__shoppingCard__container__itemCommand__params__size__text,
+.command__resume__shoppingCard__container__itemCommand__params__color__text{
+    margin-right: 20px;
+}
+.command__resume__shoppingCard__container__itemCommand__params__size__btn,
+.command__resume__shoppingCard__container__itemCommand__params__color__btn{
+    font-size: 0.8rem;
+    background-color: #FFFDF4;
+    color: #333333;
+    padding: 5px 10px;
+}
+.command__resume__shoppingCard__container__itemCommand__params__size__btn:hover,
+.command__resume__shoppingCard__container__itemCommand__params__color__btn:hover{
+    background-color: #333333;
+    color: #FFFDF4;
+}
+.command__resume__shoppingCard__container__itemCommand__remove{
+    text-align: center;
+}

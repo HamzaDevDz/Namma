@@ -1,8 +1,6 @@
 .products{
     width: calc(100% - 800px);
-    transform: translateY(200px);
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-    align-content: center;
-}
+    align-content: center;}

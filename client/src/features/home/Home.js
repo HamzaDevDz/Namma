@@ -1,6 +1,6 @@
 import React from "react"
 import './Home.css'
-import ShoppingCard from "./shoppingCard/ShoppingCard";
+import ShoppingCard from "../shoppingCard/ShoppingCard";
 import Products from "./products/Products";
 import NavBar from "../navBar/NavBar";
 
