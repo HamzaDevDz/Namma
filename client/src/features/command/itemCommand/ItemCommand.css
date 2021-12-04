@@ -55,4 +55,14 @@
 }
 .command__resume__shoppingCard__container__itemCommand__remove{
     text-align: center;
+    transition: 0.3s;
+    min-height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.command__resume__shoppingCard__container__itemCommand__remove:hover{
+    cursor: pointer;
+    background-color: #535353;
 }
