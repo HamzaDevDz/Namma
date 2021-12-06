@@ -6,6 +6,8 @@ import Product from "./product/Product";
 
 function Products() {
 
+    console.log("Home -> Products ! --------")
+
     const statusProducts = useSelector(selectStatusProducts)
     const products = useSelector(selectProducts)
 
@@ -16,6 +18,7 @@ function Products() {
                     products.length !== 0 ?
                         products.map(({__id, title, description, price, pathPicture}) => (
                             <Product id={__id}
+                                     key={__id}
                                      title={title}
                                      description={description}
                                      price={price}

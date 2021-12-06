@@ -7,6 +7,8 @@ import {useHistory} from "react-router-dom";
 
 function ShoppingCard() {
 
+    console.log("ShoppingCard Page ! -------")
+
     const dispatch = useDispatch()
 
     const shoppingCard = useSelector(selectShoppingCard)
@@ -17,10 +19,17 @@ function ShoppingCard() {
 
     useEffect(()=>{
         if(!openShoppingCard){
-            document.querySelector('.shoppingCard').style.display = 'none'
+            document.querySelector(".shoppingCard").classList.remove('show')
+            document.querySelector(".shoppingCard").classList.add('hide')
+            setTimeout(()=>{
+                document.querySelector('.shoppingCard').style.display = 'none'
+            }, 300)
+
         }
         else{
             document.querySelector('.shoppingCard').style.display = 'flex'
+            document.querySelector(".shoppingCard").classList.remove('hide')
+            document.querySelector(".shoppingCard").classList.add('show')
         }
     }, [openShoppingCard])
 
@@ -32,6 +41,7 @@ function ShoppingCard() {
                     <div className="shoppingCard__items">
                         {
                             shoppingCard.map(item => <Item id={item.__id}
+                                                           key={item.__id}
                                                            title={item.title}
                                                            size={item.size}
                                                            color={item.color}

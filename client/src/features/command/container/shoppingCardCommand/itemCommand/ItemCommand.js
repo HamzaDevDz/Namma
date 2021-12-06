@@ -2,13 +2,14 @@ import React, {useState} from 'react';
 import "./ItemCommand.css"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import {useDispatch} from "react-redux";
+import {remove__fromShoppingCard} from "../../../../shoppingCard/shoppingCardSlice";
 
 function ItemCommand({id, pathPicture, title, description, price, size, color}) {
 
     const dispatch = useDispatch()
 
     const handleRemoveItemFromShoppingCard = function () {
-        
+        dispatch(remove__fromShoppingCard(id))
     }
 
     return (

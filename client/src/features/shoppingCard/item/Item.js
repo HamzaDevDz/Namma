@@ -6,10 +6,12 @@ import {remove__fromShoppingCard} from "../shoppingCardSlice";
 
 function Item({id, title, size, color, price}) {
 
+    console.log("ShoppingCard -> Item Page ! -------")
+
     const dispatch = useDispatch()
 
     return (
-        <div className={'shoppingCard__items__item'} key={id}>
+        <div className={'shoppingCard__items__item'}>
             <p className="shoppingCard__items__item__title">{title}</p>
             <p className="shoppingCard__items__item__size">
                 {size}

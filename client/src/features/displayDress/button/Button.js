@@ -26,7 +26,7 @@ function Button() {
         setCheckIfDressAlreadyExistInShoppingCard(index !== -1)
     }, [shoppingCard.length])
 
-    const handleAddShoppingCard = function() {
+    const handleAddShoppingCard = useCallback(()=>{
         const newItem = {
             __id: displayDress.__id,
             pathPicture: displayDress.pathPictures[0],
@@ -37,18 +37,19 @@ function Button() {
             price: displayDress.price
         }
         dispatch(add__toShoppingCard(newItem))
-    }
+    }, [displayDress, selectedSize, selectedColor])
 
-    const handleRemoveFromShoppingCard = function () {
+    // Est ce vraiment utile d'utiliser useCallback ici ?????
+    const handleRemoveFromShoppingCard = useCallback(()=>{
         dispatch(remove__fromShoppingCard(displayDress.__id))
-    }
+    }, [displayDress.__id])
 
     return (
         <div className={"displayDress__success__meta__btn"}>
             {
                 !checkIfDressAlreadyExistInShoppingCard ?
                     <button
-                        disabled={!selectedSize || !selectedColor}
+                        // disabled={!selectedColor}
                         type={'button'}
                         className={"displayDress__btn__add btnCustom"}
                         onClick={handleAddShoppingCard}

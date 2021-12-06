@@ -66,6 +66,13 @@
     cursor: pointer;
     background-color: #535353;
 }
+.navBar__shoppingCard__selected{
+    background-color: #d2d0c7;
+    color: #333333;
+}
+.navBar__shoppingCard__selected:hover{
+    background-color: #FFFDF4;
+}
 
 /*BOXES*/
 .navBar__gender__man:hover + .navBar__manBox, .navBar__manBox:hover{

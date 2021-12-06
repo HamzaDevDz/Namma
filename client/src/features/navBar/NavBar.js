@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react'
+import React, {useCallback, useEffect, useMemo} from 'react'
 import './NavBar.css'
 import Man from "./Man.js";
 import Woman from "./Woman.js";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {useDispatch, useSelector} from "react-redux";
 import {selectLengthShoppingCard, toggle__openShoppingCard} from "../shoppingCard/shoppingCardSlice";
-import {useLocation} from "react-router-dom";
 
 function NavBar() {
 
@@ -15,15 +14,14 @@ function NavBar() {
 
     const lengthShoppingCard = useSelector(selectLengthShoppingCard)
 
-    let location = useLocation()
-
-    useEffect(()=>{
-        if(location.pathname === '/landing'){
-            document.querySelector('.navBar').style.display = 'none'
+    const handleOpenShoppingCard = useCallback(()=>{
+        if(document.querySelector(".navBar__shoppingCard").classList.contains("navBar__shoppingCard__selected")){
+            document.querySelector(".navBar__shoppingCard").classList.remove("navBar__shoppingCard__selected")
         }else{
-            document.querySelector('.navBar').style.display = 'flex'
+            document.querySelector(".navBar__shoppingCard").classList.add("navBar__shoppingCard__selected")
         }
-    }, [location])
+        dispatch(toggle__openShoppingCard())
+    }, [])
 
     return (
         <div className="navBar" >
@@ -37,9 +35,7 @@ function NavBar() {
                 </p>
                 <Woman />
             </div>
-            <div className={'navBar__shoppingCard'} onClick={()=>{
-                dispatch(toggle__openShoppingCard())
-            }}>
+            <div className={'navBar__shoppingCard'} onClick={handleOpenShoppingCard}>
                 <p className={'navBar__shoppingCard__length'}>{lengthShoppingCard}</p>
                 <ShoppingBasketIcon className="navBar__shoppingCard__icon" />
             </div>

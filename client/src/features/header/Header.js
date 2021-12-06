@@ -1,36 +1,31 @@
-import React, {useEffect, useState} from "react"
+import React, {useCallback, useEffect, useMemo, useState} from "react"
 import './Header.css'
 import Avatar from "@mui/material/Avatar";
 import {useSelector} from "react-redux";
 import {selectUser} from "./userSlice";
-import {useLocation, useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 export function Header() {
 
     console.log('Header Page')
 
-    const user = useSelector(selectUser)
-    const [theme, setTheme] = useState()
-
-    let location = useLocation()
     const history = useHistory()
 
-    useEffect(()=>{
-        if(location.pathname === '/landing'){
-            setTheme({
-                'color': '#333333'
-            })
-        }else{
-            setTheme({
-                'color': '#FFFDF4',
-                'backgroundColor': '#333333'
-            })
-        }
-    }, [location])
+    const user = useSelector(selectUser)
+    const theme = useMemo(()=>{
+        return({
+            'color': '#FFFDF4',
+            'backgroundColor': '#333333'
+        })
+    }, [])
+
+    const handleClickHome = useCallback(() => {
+        history.push('/home')
+    }, [])
 
     return(
         <div className={'header'} style={theme}>
-            <div className={'header__logo'} onClick={()=>history.push('/home')}>
+            <div className={'header__logo'} onClick={handleClickHome}>
                 <p className={'header__logo__text'}>
                     NAMMA
                 </p>
