@@ -36,6 +36,7 @@
     flex-direction: row;
     width: 100%;
     align-items: center;
+    justify-content: space-evenly;
 }
 .command__resume__shoppingCard__container__itemCommand__params__size__text,
 .command__resume__shoppingCard__container__itemCommand__params__color__text{
@@ -47,6 +48,7 @@
     background-color: #FFFDF4;
     color: #333333;
     padding: 5px 10px;
+    font-style: italic;
 }
 .command__resume__shoppingCard__container__itemCommand__params__size__btn:hover,
 .command__resume__shoppingCard__container__itemCommand__params__color__btn:hover{

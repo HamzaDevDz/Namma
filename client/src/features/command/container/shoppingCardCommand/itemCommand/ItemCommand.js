@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./ItemCommand.css"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import {useDispatch} from "react-redux";
 
 function ItemCommand({id, pathPicture, title, description, price, size, color}) {
+
+    const dispatch = useDispatch()
+
+    const handleRemoveItemFromShoppingCard = function () {
+        
+    }
+
     return (
         <div key={id} className="command__resume__shoppingCard__container__itemCommand">
             <img src={pathPicture} alt="" className="command__resume__shoppingCard__container__itemCommand__picture"/>
@@ -14,14 +22,16 @@ function ItemCommand({id, pathPicture, title, description, price, size, color}) 
             <div className="command__resume__shoppingCard__container__itemCommand__params">
                 <div className="command__resume__shoppingCard__container__itemCommand__params__size">
                     <p className="command__resume__shoppingCard__container__itemCommand__params__size__text">{size}</p>
-                    <button className="command__resume__shoppingCard__container__itemCommand__params__size__btn btnCustom">Changer</button>
+                    {/*<button className="command__resume__shoppingCard__container__itemCommand__params__size__btn btnCustom">Changer</button>*/}
                 </div>
                 <div className="command__resume__shoppingCard__container__itemCommand__params__color">
                     <p className="command__resume__shoppingCard__container__itemCommand__params__color__text">{color}</p>
-                    <button className="command__resume__shoppingCard__container__itemCommand__params__color__btn btnCustom">Changer</button>
+                    {/*<button className="command__resume__shoppingCard__container__itemCommand__params__color__btn btnCustom">Changer</button>*/}
                 </div>
             </div>
-            <div className="command__resume__shoppingCard__container__itemCommand__remove">
+            <div className="command__resume__shoppingCard__container__itemCommand__remove"
+                 onClick={handleRemoveItemFromShoppingCard}
+            >
                 <DeleteForeverIcon className="command__resume__shoppingCard__container__itemCommand__remove__icon"/>
             </div>
         </div>
