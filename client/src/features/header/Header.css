@@ -26,3 +26,6 @@
 .header__user__btn:hover{
     cursor: pointer;
 }
+.header__uploadDress:hover{
+    cursor: pointer;
+}

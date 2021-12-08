@@ -8,6 +8,7 @@ import NavBar from "./features/navBar/NavBar";
 import DisplayDress from "./features/displayDress/DisplayDress";
 import ShoppingCard from "./features/shoppingCard/ShoppingCard";
 import Command from "./features/command/Command";
+import UploadDress from "./features/uploadDress/UploadDress";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                   <Route exact path={'/home'} component={Home} />
                   <Route exact path={'/displayDress/:idDress'} component={DisplayDress} />
                   <Route exact path={'/command'} component={Command} />
+                  <Route exact path={'/uploadDress'} component={UploadDress} />
                   <Redirect from={'/*'} to="/landing" status={200} />
               </Switch>
           </Router>

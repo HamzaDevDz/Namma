@@ -1,0 +1,52 @@
+.uploadDress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-height: calc(100vh - 80px);
+    transform: translateY(80px);
+    background-color: #FFFDF4;
+}
+.uploadDress__name{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333333;
+}
+.uploadDress input{
+    border: 1px solid #333333;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.uploadDress__pictures{
+    margin-bottom: 10px !important;
+}
+.uploadDress label{
+    background-color: #535353;
+    color: #FFFDF4;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.uploadDress label:hover{
+    cursor: pointer;
+    background-color: #333333;
+    box-shadow: 0 1px 1px 0 #333333;
+}
+.uploadDress__sizeAndColors{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.uploadDress__sizeAndColors__colors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}

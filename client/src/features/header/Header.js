@@ -30,6 +30,9 @@ export function Header() {
                     NAMMA
                 </p>
             </div>
+            <div className="header__uploadDress"
+               onClick={()=>history.push("/uploadDress")}
+            >Charger un vêtement</div>
             {
                 user === null ?
                     <div className={'header__user'}>
