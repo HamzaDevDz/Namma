@@ -21,7 +21,7 @@
     width: 100%;
 }
 .uploadDress__pictures{
-    margin-bottom: 10px !important;
+    margin-bottom: 20px !important;
 }
 .uploadDress label{
     background-color: #535353;
@@ -38,15 +38,38 @@
     background-color: #333333;
     box-shadow: 0 1px 1px 0 #333333;
 }
-.uploadDress__sizeAndColors{
+.uploadDress__sizesAndColors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #333333;
+}
+.uploadDress__sizesAndColors__sizeAndColors{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 10px;
 }
-.uploadDress__sizeAndColors__colors{
+.uploadDress__sizesAndColors__sizeAndColors__colors{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 30%;
+    width: 100%;
+}
+.uploadDress__sizesAndColors__plus{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #535353;
+    color: #FFFDF4;
+}
+.uploadDress__sizesAndColors__plus:hover{
+    background-color: #333333;
+    cursor: pointer;
 }
