@@ -15,7 +15,7 @@
     width: 49% !important;
 }
 .colors__color__select{
-    font
+    font-size: 1.2rem;
 }
 .colors__plus{
     display: flex;

@@ -45,6 +45,7 @@
     width: 100%;
     padding-top: 10px;
     border-top: 1px solid #333333;
+    margin-bottom: 20px;
 }
 .uploadDress__sizesAndColors__sizeAndColors{
     display: flex;

@@ -12,9 +12,9 @@ conn.once("open", () => {
     gfs.collection("pictures");
 })
 
-router.post("/upload", upload.single("file"), async (req, res) => {
+router.post("/upload", upload.array("images", 12), async (req, res) => {
     if (req.file === undefined) return res.send("File must be selected !")
-    // console.log(req.file)
+    console.log(req.file)
     return res.send(req.file.filename)
 });
 

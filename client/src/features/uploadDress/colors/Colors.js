@@ -11,6 +11,7 @@ function Colors() {
                [...Array(numberColors)].map((n,i) => (
                    <div className="colors__color">
                        <select className="colors__color__select">
+                           <option disabled className="colors__color__select__option">Couleur</option>
                            <option className="colors__color__select__option">Noir</option>
                            <option className="colors__color__select__option">Blanc</option>
                            <option className="colors__color__select__option">Bleu</option>
