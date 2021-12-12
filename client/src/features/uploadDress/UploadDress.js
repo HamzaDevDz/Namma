@@ -2,6 +2,8 @@ import React, {useRef, useState} from 'react';
 import "./UploadDress.css";
 import Colors from "./colors/Colors";
 import axios from "axios";
+import Input from "@mui/material/Input";
+import TextField from "@mui/material/TextField";
 
 function UploadDress() {
 
@@ -12,17 +14,12 @@ function UploadDress() {
     const [numberSizesAndColors, setNumberSizesAndColors] = useState(1)
 
     async function uploadToDB() {
-        console.log(refPictures.current.files)
-        const formData = new FormData()
-        formData.append('images', refPictures.current.files)
-        const pathPictures = await axios.post("http://localhost:9000/pictures/upload", formData)
-            .then(function (response){
-                console.log(response)
-            })
+
     }
 
-    const handleValid = function (e) {
+    const handleValid = async function (e) {
         e.preventDefault()
+        if(Array.from(refPictures.current.files).length === 0) return
         const newDress = {}
         const sizesArray = []
         const sizesNodes = document.querySelectorAll(".uploadDress__sizesAndColors__sizeAndColors")
@@ -40,19 +37,31 @@ function UploadDress() {
         newDress.description = refDescription.current.value
         newDress.price = refPrice.current.value
         newDress.sizesAndColors = sizesArray
-        uploadToDB()
+
+        const formData = new FormData()
+        Array.from(refPictures.current.files).forEach(file => {
+            formData.append("images[]", file)
+        })
+        await axios.post("http://localhost:9000/pictures/upload", formData)
+            .then(async function (filenames){
+                if(typeof filenames !== "array") return
+                newDress.pathPictures = filenames
+                await axios.post("http://localhost:9000/products/upload", newDress).then(function (product) {
+                    console.log(product)
+                    console.log("upload product success !")
+                })
+            })
     }
 
     return (
         <form className="uploadDress">
             <h1 className="uploadDress__name">Charger un vêtement !</h1>
-            <input ref={refTitle} type="text" className="uploadDress__title" placeholder={"Title"}
+            <input label={"Titre"} ref={refTitle} type="text" className="uploadDress__title" placeholder={"Title"}
                    // onChange={e => {refTitle.current = e.target.value}}
             />
             <input ref={refDescription} type="text" className="uploadDress__description" placeholder={"Description"}/>
             <input ref={refPrice} type="number" className="uploadDress__price" placeholder={"Price"}/>
-            <input ref={refPictures} type="file" className="uploadDress__pictures" multiple
-            />
+            <input ref={refPictures} type="file" className="uploadDress__pictures" multiple/>
             <div className="uploadDress__sizesAndColors">
                 {
                     [...Array(numberSizesAndColors)].map((s,i)=>(

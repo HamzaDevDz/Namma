@@ -6,6 +6,7 @@ const storage = new GridFsStorage({
     url: process.env.MongoURL,
     options: { useNewUrlParser: true, useUnifiedTopology: true },
     file: (req, file) => {
+
         const matchImage = ["image/png", "image/jpeg", "image/jpg"]
         // const matchVideo = ["video/mp4", "video/avi", "video/wmv"];
 
@@ -15,8 +16,8 @@ const storage = new GridFsStorage({
         }
 
         return {
-            bucketName: "pictures",
-            filename: `picture-${Date.now()}${path.extname(file.originalname)}`
+            bucketName: "images",
+            filename: `image-${Date.now()}${path.extname(file.originalname)}`
         }
     },
 })

@@ -3,7 +3,19 @@ import mongoProducts from "../models/mongoProducts.js";
 import {ObjectId} from 'mongodb';
 const router = express.Router();
 
-router.get('/download/products', (req, res)=> {
+router.post('/upload', (req, res) => {
+    const newDress = req.body
+    mongoProducts.create(newDress, (err, data) => {
+        if(err){
+            res.status(500).send(err)
+        }
+        else{
+            res.status(201).send(data)
+        }
+    })
+})
+
+router.get('/download', (req, res)=> {
     mongoProducts.aggregate([
         {
             $project:{
@@ -18,19 +30,7 @@ router.get('/download/products', (req, res)=> {
     })
 })
 
-router.post('/upload', (req, res) => {
-    const dbUser = req.body
-    mongoProducts.create(dbUser, (err, data) => {
-        if(err){
-            res.status(500).send(err)
-        }
-        else{
-            res.status(201).send(data)
-        }
-    })
-})
-
-
+// OTHERS ---------------------------------------------------------------------------------
 router.post('/search', (req, res)=>{
     const search = req.body.search
     const idUser = req.body.idUser

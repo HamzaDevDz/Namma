@@ -9,13 +9,16 @@ let gfs;
 const conn = mongoose.connection;
 conn.once("open", () => {
     gfs = Grid(conn.db, mongoose.mongo);
-    gfs.collection("pictures");
+    gfs.collection("images");
 })
 
-router.post("/upload", upload.array("images", 12), async (req, res) => {
-    if (req.file === undefined) return res.send("File must be selected !")
-    console.log(req.file)
-    return res.send(req.file.filename)
+router.post("/upload", upload.array("images[]", 10), async (req, res) => {
+    if (req.files === undefined) return res.send("File must be selected !")
+    const filesNames = []
+    req.files.forEach(image => {
+        filesNames.push(image.filename)
+    })
+    return res.send(filesNames)
 });
 
 router.get("/retrieve", async (req, res) => {
