@@ -4,19 +4,6 @@
     align-items: center;
     width: 100%;
 }
-.colors__color{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.colors__color__select, .colors__color__number{
-    width: 49% !important;
-}
-.colors__color__select{
-    font-size: 1.2rem;
-}
 .colors__plus{
     display: flex;
     align-items: center;

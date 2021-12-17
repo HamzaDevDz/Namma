@@ -1,0 +1,13 @@
+.colors__color{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.colors__color .select, .colors__color__number, .colors__color__code{
+    width: 30% !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+}

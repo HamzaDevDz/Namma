@@ -4,7 +4,8 @@ import {ObjectId} from 'mongodb';
 const router = express.Router();
 
 router.post('/upload', (req, res) => {
-    const newDress = req.body
+    const newDress = req.body.newDress
+    console.log(newDress)
     mongoProducts.create(newDress, (err, data) => {
         if(err){
             res.status(500).send(err)
