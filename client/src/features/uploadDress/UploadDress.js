@@ -46,12 +46,13 @@ function UploadDress() {
                 console.log('I')
                 // if(typeof filenames !== "array") return
                 newDress.pathPictures = filenames.data
-                console.log(newDress)
-                await axios.post("http://localhost:9000/products/upload", {newDress: newDress}).then(function (product) {
-                    console.log("II")
-                    console.log(product)
-                    // window.reload()
-                })
+                console.log(filenames.data)
+                // console.log(newDress)
+                // await axios.post("http://localhost:9000/products/upload", {newDress: newDress}).then(function (product) {
+                //     console.log("II")
+                //     console.log(product)
+                //     // window.reload()
+                // })
             })
     }
 

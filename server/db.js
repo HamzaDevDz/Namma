@@ -9,7 +9,7 @@ const pusher = new Pusher({
     useTLS: true
 });
 
-const connexion = async () => {
+const connexion = async (uri, callback) => {
     try {
         // mongoose.connection.once('open', ()=>{
         //     const changeStreamPosts = mongoose.connection.collection('posts').watch()
@@ -39,7 +39,7 @@ const connexion = async () => {
         console.log("Connected to database");
     } catch (error) {
         console.log(error);
-        console.log("could not connect to database");
+        console.log("Could not connect to database")
     }
 }
 
