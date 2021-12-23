@@ -5,6 +5,9 @@ const productModel = mongoose.Schema({
     description: String,
     price: Number,
     pathPictures: [String],
+    gender: String,
+    type: String,
+    article: String,
     sizesAndColors: [
         {
             title: String,

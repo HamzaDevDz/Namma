@@ -16,19 +16,37 @@ router.post('/upload', (req, res) => {
     })
 })
 
-router.get('/download', (req, res)=> {
+router.get('/download/all', (req, res)=> {
     mongoProducts.aggregate([
         {
             $project:{
                 title: 1,
                 description: 1,
                 price: 1,
-                pathPicture: {$pathPictures: {$slice: 1}},
+                type: 1,
+                article: 1,
+                pathPicture: {$first: "$pathPictures"},
             }
         }
     ]).exec((err, data) => {
         res.send(data)
     })
+})
+
+router.get('/download/single', (req, res)=> {
+    mongoProducts.aggregate([
+        {
+            $match:{
+                _id: ObjectId(req.query.id),
+            }
+        }
+    ]).exec((err, data) => {
+        res.send(data)
+    })
+})
+
+router.get('/wesh', (req, res)=> {
+    res.send("Hello Baghdad")
 })
 
 // OTHERS ---------------------------------------------------------------------------------

@@ -1,24 +1,30 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./Products.css"
-import {useSelector} from "react-redux";
-import {selectProducts, selectStatusProducts} from "./productsSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {getProducts, selectProducts, selectStatusProducts} from "./productsSlice";
 import Product from "./product/Product";
 
 function Products() {
 
     console.log("Home -> Products ! --------")
 
-    const statusProducts = useSelector(selectStatusProducts)
+    const dispatch = useDispatch()
+
+    const loadProducts = useSelector(selectStatusProducts)
     const products = useSelector(selectProducts)
+
+    useEffect(()=>{
+        dispatch(getProducts())
+    }, [])
 
     return (
         <div className={'products'}>
             {
-                !statusProducts ?
+                !loadProducts ?
                     products.length !== 0 ?
-                        products.map(({__id, title, description, price, pathPicture}) => (
-                            <Product id={__id}
-                                     key={__id}
+                        products.map(({_id, title, description, price, pathPicture}) => (
+                            <Product id={_id}
+                                     key={_id}
                                      title={title}
                                      description={description}
                                      price={price}

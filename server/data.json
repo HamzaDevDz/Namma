@@ -1,11 +1,304 @@
 [
   {
-    "title": "Taken",
-    "description": "Description 6",
-    "price": 5500,
-    "gender": "Homme",
+    "title": "Symmetry",
+    "description": "Description 1",
+    "price": 5000,
+    "gender": "Femme",
+    "type": "Haut",
+    "article": "Veste",
+    "sizesAndColors": [
+      {
+        "title": "S",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 19
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 3
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 18
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "title": "XL",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 6
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 1
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 15
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 18
+          }
+        ]
+      },
+      {
+        "title": "XXL",
+        "colors": [
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 15
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 16
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 10
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "Offspring",
+    "description": "Description 3",
+    "price": 3000,
+    "gender": "Femme",
     "type": "Haut",
     "article": "Pull",
+    "sizesAndColors": [
+      {
+        "title": "S",
+        "colors": [
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 7
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "title": "XL",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 4
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 1
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 10
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 1
+          }
+        ]
+      },
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 12
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 11
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 16
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 2
+          }
+        ]
+      },
+      {
+        "title": "M",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 2
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 5
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 13
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "Taken",
+    "description": "Description 6",
+    "price": 6000,
+    "gender": "Femme",
+    "type": "Haut",
+    "article": "T-Shirt",
+    "sizesAndColors": [
+      {
+        "title": "XXL",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 10
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 15
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 19
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 0
+          }
+        ]
+      },
+      {
+        "title": "S",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 1
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 17
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 3
+          }
+        ]
+      },
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 6
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 14
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "title": "M",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 11
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 7
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 8
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 16
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "Love",
+    "description": "Description 1",
+    "price": 7000,
+    "gender": "Femme",
+    "type": "Haut",
+    "article": "Monteau",
     "sizesAndColors": [
       {
         "title": "L",
@@ -13,8 +306,184 @@
           {
             "title": "Gris",
             "code": "#808080",
+            "number": 0
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 4
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 11
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "title": "M",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 0
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 6
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 13
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "title": "S",
+        "colors": [
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 9
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
             "number": 1
           },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 11
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "title": "XL",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 17
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 4
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 10
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "Taken",
+    "description": "Description 9",
+    "price": 5000,
+    "gender": "Homme",
+    "type": "Bas",
+    "article": "Short",
+    "sizesAndColors": [
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 7
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 15
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 14
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 0
+          }
+        ]
+      },
+      {
+        "title": "XXL",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 7
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 11
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 4
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "title": "S",
+        "colors": [
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 4
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 5
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "title": "M",
+        "colors": [
           {
             "title": "Rouge",
             "code": "#FF0000",
@@ -23,7 +492,43 @@
           {
             "title": "Noir",
             "code": "#000000",
-            "number": 7
+            "number": 13
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 0
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "SpiderMan",
+    "description": "Description 7",
+    "price": 8200,
+    "gender": "Homme",
+    "type": "Haut",
+    "article": "Pull",
+    "sizesAndColors": [
+      {
+        "title": "XXL",
+        "colors": [
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 3
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 17
           }
         ]
       },
@@ -33,42 +538,32 @@
           {
             "title": "Blanc",
             "code": "#FFFFFF",
-            "number": 5
+            "number": 14
           },
           {
             "title": "Bleu",
             "code": "#0000FF",
-            "number": 3
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 19
+            "number": 18
           }
         ]
       },
       {
-        "title": "XXL",
+        "title": "XL",
         "colors": [
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 7
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 12
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 4
-          },
           {
             "title": "Gris",
             "code": "#808080",
-            "number": 12
+            "number": 4
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 15
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 11
           }
         ]
       },
@@ -78,26 +573,244 @@
           {
             "title": "Noir",
             "code": "#000000",
+            "number": 1
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 17
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 3
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 7
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "Taken",
+    "description": "Description 3",
+    "price": 8200,
+    "gender": "Femme",
+    "type": "Haut",
+    "article": "Monteau",
+    "sizesAndColors": [
+      {
+        "title": "M",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 11
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 17
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 15
+          }
+        ]
+      },
+      {
+        "title": "S",
+        "colors": [
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 11
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 15
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 3
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 3
+          }
+        ]
+      },
+      {
+        "title": "XXL",
+        "colors": [
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 19
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 9
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 6
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 6
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 14
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 14
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 18
+          }
+        ]
+      }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
+    ]
+  },
+  {
+    "title": "Death",
+    "description": "Description 5",
+    "price": 8200,
+    "gender": "Homme",
+    "type": "Bas",
+    "article": "Jeans",
+    "sizesAndColors": [
+      {
+        "title": "M",
+        "colors": [
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 7
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 6
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
             "number": 0
+          }
+        ]
+      },
+      {
+        "title": "XXL",
+        "colors": [
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 8
+          },
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 12
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
+            "number": 17
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 19
+          },
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 9
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 15
+          }
+        ]
+      },
+      {
+        "title": "XL",
+        "colors": [
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 7
           },
           {
             "title": "Bleu",
             "code": "#0000FF",
             "number": 13
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 18
           }
         ]
       }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
     ]
   },
   {
-    "title": "Songoku",
-    "description": "Description 8",
-    "price": 2500,
+    "title": "SpiderMan",
+    "description": "Description 9",
+    "price": 8200,
     "gender": "Homme",
     "type": "Haut",
     "article": "T-Shirt",
@@ -106,293 +819,18 @@
         "title": "XL",
         "colors": [
           {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 12
-          },
-          {
             "title": "Bleu",
             "code": "#0000FF",
-            "number": 3
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 1
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 5
+            "number": 4
           },
           {
             "title": "Blanc",
             "code": "#FFFFFF",
-            "number": 11
-          }
-        ]
-      },
-      {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 18
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 19
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 7
-          }
-        ]
-      },
-      {
-        "title": "M",
-        "colors": [
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 2
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 7
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 16
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Tennen",
-    "description": "Description 7",
-    "price": 6000,
-    "gender": "Femme",
-    "type": "Bas",
-    "article": "Pantalon Toile",
-    "sizesAndColors": [
-      {
-        "title": "S",
-        "colors": [
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 18
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 14
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 12
-          }
-        ]
-      },
-      {
-        "title": "XXL",
-        "colors": [
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 2
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 12
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 12
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 5
-          }
-        ]
-      },
-      {
-        "title": "M",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 9
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 9
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 10
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 19
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Diamonds",
-    "description": "Description 9",
-    "price": 5000,
-    "gender": "Femme",
-    "type": "Bas",
-    "article": "Jupe",
-    "sizesAndColors": [
-      {
-        "title": "XL",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 8
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 16
-          }
-        ]
-      },
-      {
-        "title": "S",
-        "colors": [
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 19
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 6
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 7
-          }
-        ]
-      },
-      {
-        "title": "M",
-        "colors": [
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 8
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 16
+            "number": 0
           },
           {
             "title": "Noir",
             "code": "#000000",
-            "number": 16
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 14
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Songoku",
-    "description": "Description 5",
-    "price": 3000,
-    "gender": "Femme",
-    "type": "Haut",
-    "article": "Monteau",
-    "sizesAndColors": [
-      {
-        "title": "M",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 17
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 10
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 6
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 12
-          }
-        ]
-      },
-      {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 11
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 6
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 11
-          }
-        ]
-      },
-      {
-        "title": "XL",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 3
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 12
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
             "number": 3
           }
         ]
@@ -401,324 +839,120 @@
         "title": "XXL",
         "colors": [
           {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 11
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 15
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 18
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Tennen",
-    "description": "Description 1",
-    "price": 3000,
-    "gender": "Femme",
-    "type": "Bas",
-    "article": "Pantalon Classique",
-    "sizesAndColors": [
-      {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 9
-          },
-          {
             "title": "Bleu",
             "code": "#0000FF",
             "number": 18
           },
           {
-            "title": "Rouge",
-            "code": "#FF0000",
+            "title": "Blanc",
+            "code": "#FFFFFF",
             "number": 2
           }
         ]
       },
       {
-        "title": "XXL",
+        "title": "M",
         "colors": [
           {
             "title": "Rouge",
             "code": "#FF0000",
+            "number": 16
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 16
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 6
+          }
+        ]
+      },
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Rouge",
+            "code": "#FF0000",
+            "number": 3
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 7
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
             "number": 13
           },
           {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 0
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 7
-          }
-        ]
-      },
-      {
-        "title": "M",
-        "colors": [
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 16
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 5
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 14
-          }
-        ]
-      },
-      {
-        "title": "XL",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 11
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 2
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 0
-          },
-          {
             "title": "Bleu",
             "code": "#0000FF",
             "number": 7
           }
         ]
       }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
     ]
   },
   {
-    "title": "Tennen",
-    "description": "Description 2",
-    "price": 5000,
-    "gender": "Homme",
-    "type": "Bas",
-    "article": "Short",
-    "sizesAndColors": [
-      {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 4
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 1
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 11
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 1
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 5
-          }
-        ]
-      },
-      {
-        "title": "XL",
-        "colors": [
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 4
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 16
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 2
-          }
-        ]
-      },
-      {
-        "title": "M",
-        "colors": [
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 10
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 1
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 2
-          }
-        ]
-      },
-      {
-        "title": "S",
-        "colors": [
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 9
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 16
-          },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 6
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Tennen",
-    "description": "Description 10",
-    "price": 2500,
+    "title": "Death",
+    "description": "Description 4",
+    "price": 8200,
     "gender": "Homme",
     "type": "Haut",
     "article": "Pull",
     "sizesAndColors": [
       {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 14
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 18
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 13
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 13
-          }
-        ]
-      },
-      {
-        "title": "XL",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 3
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 14
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 4
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 8
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Death",
-    "description": "Description 6",
-    "price": 4500,
-    "gender": "Femme",
-    "type": "Bas",
-    "article": "Short",
-    "sizesAndColors": [
-      {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 8
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 6
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 8
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 12
-          }
-        ]
-      },
-      {
-        "title": "M",
+        "title": "S",
         "colors": [
           {
             "title": "Bleu",
             "code": "#0000FF",
+            "number": 0
+          },
+          {
+            "title": "Gris",
+            "code": "#808080",
             "number": 15
           },
           {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 5
+          },
+          {
+            "title": "Noir",
+            "code": "#000000",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "title": "L",
+        "colors": [
+          {
+            "title": "Bleu",
+            "code": "#0000FF",
+            "number": 0
+          },
+          {
+            "title": "Blanc",
+            "code": "#FFFFFF",
+            "number": 1
+          },
+          {
             "title": "Gris",
             "code": "#808080",
-            "number": 19
+            "number": 0
           }
         ]
       },
@@ -726,89 +960,9 @@
         "title": "XXL",
         "colors": [
           {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 14
-          },
-          {
             "title": "Gris",
             "code": "#808080",
-            "number": 19
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
-            "number": 18
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 0
-          }
-        ]
-      },
-      {
-        "title": "S",
-        "colors": [
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 6
-          },
-          {
-            "title": "Noir",
-            "code": "#000000",
             "number": 14
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 0
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 9
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Offspring",
-    "description": "Description 10",
-    "price": 6000,
-    "gender": "Femme",
-    "type": "Haut",
-    "article": "Monteau",
-    "sizesAndColors": [
-      {
-        "title": "XL",
-        "colors": [
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 17
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 8
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 0
-          }
-        ]
-      },
-      {
-        "title": "L",
-        "colors": [
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 19
           },
           {
             "title": "Blanc",
@@ -818,40 +972,21 @@
           {
             "title": "Bleu",
             "code": "#0000FF",
-            "number": 3
+            "number": 5
           },
-          {
-            "title": "Gris",
-            "code": "#808080",
-            "number": 0
-          }
-        ]
-      },
-      {
-        "title": "S",
-        "colors": [
           {
             "title": "Noir",
             "code": "#000000",
-            "number": 19
-          },
-          {
-            "title": "Bleu",
-            "code": "#0000FF",
-            "number": 7
-          },
-          {
-            "title": "Rouge",
-            "code": "#FF0000",
-            "number": 18
-          },
-          {
-            "title": "Blanc",
-            "code": "#FFFFFF",
-            "number": 17
+            "number": 11
           }
         ]
       }
+    ],
+    "pathPictures": [
+      "image-1640284893566.jpg",
+      "image-1640284893578.jpg",
+      "image-1640284893675.jpg",
+      "image-1640284893690.jpg"
     ]
   }
 ]

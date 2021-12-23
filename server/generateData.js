@@ -10,7 +10,7 @@ const articlesBottomMal = ["Jeans", "Pantalon Toile", "Pantalon Classique", "Sho
 const articlesBottomFemale = ["Jeans", "Pantalon Toile", "Pantalon Classique", "Short", "Jupe"]
 const sizes = ["S", "M", "L", "XL", "XXL"]
 const colors = [{title: "Noir", code: "#000000"}, {title: "Blanc", code: "#FFFFFF"}, {title: "Rouge", code: "#FF0000"}, {title: "Bleu", code: "#0000FF"}, {title: "Gris", code: "#808080"}]
-
+const pathPictures = ["image-1640284893566.jpg", "image-1640284893578.jpg", "image-1640284893675.jpg", "image-1640284893690.jpg"]
 
 function generateSizesAndColors () {
     let sizesAndColors = []
@@ -64,6 +64,7 @@ function generateDatas() {
             }
         }
         data["sizesAndColors"] = generateSizesAndColors()
+        data["pathPictures"] = pathPictures
         datas.push(data)
     }
     return datas
