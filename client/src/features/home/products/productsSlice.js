@@ -3,45 +3,9 @@ import {serverPrefix} from "../../../ServerPrefix";
 import axios from "axios"
 
 const initialState = {
-    products: [
-        {
-            __id: 1,
-            title: 'Titre du vêtement',
-            description: 'Parfait pour être classe',
-            price: 5500,
-            pathPicture: './landingPage/baghdad.png',
-        },
-        {
-            __id: 2,
-            title: 'Titre du vêtement',
-            description: 'Parfait pour être classe',
-            price: 5500,
-            pathPicture: './landingPage/hamza.png',
-        },
-        {
-            __id: 3,
-            title: 'Titre du vêtement',
-            description: 'Parfait pour être classe',
-            price: 5500,
-            pathPicture: './landingPage/baghdad.png',
-        },
-        {
-            __id: 4,
-            title: 'Titre du vêtement',
-            description: 'Parfait pour être classe',
-            price: 5500,
-            pathPicture: './landingPage/baghdad.png',
-        },
-        {
-            __id: 5,
-            title: 'Titre du vêtement',
-            description: 'Parfait pour être classe',
-            price: 5500,
-            pathPicture: './landingPage/hamza.png',
-        },
-    ],
+    products: [],
     loadProducts: true,
-};
+}
 
 export const getProducts = createAsyncThunk(
     'products/download/all',
@@ -61,10 +25,8 @@ export const productsSlice = createSlice({
         },
         [getProducts.fulfilled] : (state, action) => {
             state.products = action.payload
+            state.loadProducts = false
         },
-        [getProducts.rejected] : (state, action) => {
-            console.log(action.payload)
-        }
     },
 });
 

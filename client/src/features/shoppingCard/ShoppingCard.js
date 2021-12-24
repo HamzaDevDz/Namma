@@ -40,8 +40,8 @@ function ShoppingCard() {
                 shoppingCard.length !== 0 ?
                     <div className="shoppingCard__items">
                         {
-                            shoppingCard.map(item => <Item id={item.__id}
-                                                           key={item.__id}
+                            shoppingCard.map(item => <Item id={item.id}
+                                                           key={item.id}
                                                            title={item.title}
                                                            size={item.size}
                                                            color={item.color}

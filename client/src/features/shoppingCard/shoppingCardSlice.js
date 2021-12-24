@@ -1,17 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    shoppingCard: [
-        {
-            __id: "1",
-            pathPicture: "./landingPage/baghdad.png",
-            title: 'AMI Paris',
-            description: "Description de cet article avec une plume chebba !",
-            size: 'S',
-            color: 'Noir',
-            price: 450
-        }
-    ],
+    shoppingCard: [],
     open: false,
 };
 
@@ -23,12 +13,12 @@ export const shoppingCardSlice = createSlice({
             state.shoppingCard.push(action.payload)
         },
         remove__fromShoppingCard: (state, action) => {
-            const index = state.shoppingCard.findIndex(item => item.__id === action.payload)
+            const index = state.shoppingCard.findIndex(item => item.id === action.payload)
             if(index === -1) return
             state.shoppingCard.splice(index, 1)
         },
         update__shoppingCard: (state, action) => {
-            const index = state.shoppingCard.findIndex(item => item.__id === action.payload.__id)
+            const index = state.shoppingCard.findIndex(item => item.id === action.payload.id)
             if(index === -1) return
             state.shoppingCard[index] = action.payload
         },

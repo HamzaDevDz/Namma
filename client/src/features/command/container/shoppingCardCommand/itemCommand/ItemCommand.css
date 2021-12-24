@@ -3,6 +3,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 10px;
 }
 .command__resume__shoppingCard__container__itemCommand__picture{
     object-fit: contain;

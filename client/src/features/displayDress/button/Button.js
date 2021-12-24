@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import "./Button.css"
 import {useDispatch, useSelector} from "react-redux";
 import {
@@ -22,13 +22,13 @@ function Button() {
     const [checkIfDressAlreadyExistInShoppingCard, setCheckIfDressAlreadyExistInShoppingCard] = useState(false)
 
     useEffect(()=>{
-        const index = shoppingCard.findIndex(item => item.__id === displayDress.__id)
+        const index = shoppingCard.findIndex(item => item.id === displayDress._id)
         setCheckIfDressAlreadyExistInShoppingCard(index !== -1)
     }, [shoppingCard.length])
 
-    const handleAddShoppingCard = useCallback(()=>{
+    const handleAddShoppingCard = ()=>{
         const newItem = {
-            __id: displayDress.__id,
+            id: displayDress._id,
             pathPicture: displayDress.pathPictures[0],
             title: displayDress.title,
             description: displayDress.description,
@@ -37,19 +37,18 @@ function Button() {
             price: displayDress.price
         }
         dispatch(add__toShoppingCard(newItem))
-    }, [displayDress, selectedSize, selectedColor])
+    }
 
-    // Est ce vraiment utile d'utiliser useCallback ici ?????
-    const handleRemoveFromShoppingCard = useCallback(()=>{
-        dispatch(remove__fromShoppingCard(displayDress.__id))
-    }, [displayDress.__id])
+    const handleRemoveFromShoppingCard = () => {
+        dispatch(remove__fromShoppingCard(displayDress._id))
+    }
 
     return (
         <div className={"displayDress__success__meta__btn"}>
             {
                 !checkIfDressAlreadyExistInShoppingCard ?
                     <button
-                        // disabled={!selectedColor}
+                        disabled={!selectedColor}
                         type={'button'}
                         className={"displayDress__btn__add btnCustom"}
                         onClick={handleAddShoppingCard}

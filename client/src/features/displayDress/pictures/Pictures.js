@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Pictures.css"
+import {getImagePrefix} from "../../../ServerPrefix";
 
 function Pictures({pathPictures}) {
 
@@ -10,7 +11,7 @@ function Pictures({pathPictures}) {
             {
                 pathPictures.length !== 0 ?
                     pathPictures.map((pathPicture, indexPicture) => (
-                        <img key={indexPicture} src={pathPicture} alt={'picture'} className={"displayDress__success__pictures__picture"}/>
+                        <img key={indexPicture} src={getImagePrefix + pathPicture} alt={'picture'} className={"displayDress__success__pictures__picture"}/>
                     ))
                     :
                     'Aucune images disponibles pour cet article !'

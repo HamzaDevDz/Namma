@@ -4,7 +4,7 @@ import ItemCommand from "./itemCommand/ItemCommand";
 import {useSelector} from "react-redux";
 import {selectShoppingCard} from "../../../shoppingCard/shoppingCardSlice";
 
-function ShoppingCardCommand(props) {
+function ShoppingCardCommand() {
 
     const shoppingCard = useSelector(selectShoppingCard)
 
@@ -12,7 +12,8 @@ function ShoppingCardCommand(props) {
         <div className="command__resume__container__shoppingCard">
             {
                 shoppingCard.map(item => (
-                    <ItemCommand id={item.__id}
+                    <ItemCommand id={item.id}
+                                 key={item.id}
                                  pathPicture={item.pathPicture}
                                  title={item.title}
                                  description={item.description}

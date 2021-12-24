@@ -3,6 +3,7 @@ import "./ItemCommand.css"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import {useDispatch} from "react-redux";
 import {remove__fromShoppingCard} from "../../../../shoppingCard/shoppingCardSlice";
+import {getImagePrefix} from "../../../../../ServerPrefix";
 
 function ItemCommand({id, pathPicture, title, description, price, size, color}) {
 
@@ -14,7 +15,7 @@ function ItemCommand({id, pathPicture, title, description, price, size, color}) 
 
     return (
         <div key={id} className="command__resume__shoppingCard__container__itemCommand">
-            <img src={pathPicture} alt="" className="command__resume__shoppingCard__container__itemCommand__picture"/>
+            <img src={getImagePrefix + pathPicture} alt="" className="command__resume__shoppingCard__container__itemCommand__picture"/>
             <div className="command__resume__shoppingCard__container__itemCommand__information">
                 <p className="command__resume__shoppingCard__container__itemCommand__information__title">{title}</p>
                 <p className="command__resume__shoppingCard__container__itemCommand__information__description">{description}</p>

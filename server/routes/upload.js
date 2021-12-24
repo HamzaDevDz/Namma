@@ -21,7 +21,7 @@ router.post("/upload", upload.array("images[]", 10), async (req, res) => {
     return res.send(filesNames)
 });
 
-router.get("/retrieve", async (req, res) => {
+router.get("/download", async (req, res) => {
     try {
         const file = await gfs.files.findOne({ filename: req.query.filename });
         const readStream = gfs.createReadStream(file.filename);

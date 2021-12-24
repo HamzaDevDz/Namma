@@ -1,6 +1,7 @@
 .displayDress{
     transform: translateY(80px);
     background-color: #FFFDF4;
+    width: 100%;
 }
 .displayDress__loading,
 .displayDress__error{
@@ -13,15 +14,14 @@
 .displayDress__success{
     /*background-color: #535353;*/
     width: 100%;
-   height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .displayDress__success__meta{
-    /*background-color: blueviolet;*/
-    width: 50%;
+    width: 49%;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -41,7 +41,7 @@ router.get('/download/single', (req, res)=> {
             }
         }
     ]).exec((err, data) => {
-        res.send(data)
+        res.send(data[0])
     })
 })
 

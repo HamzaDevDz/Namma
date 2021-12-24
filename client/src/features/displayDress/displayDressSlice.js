@@ -1,48 +1,21 @@
-import { createSlice } from '@reduxjs/toolkit';
+import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import axios from "axios";
+import {serverPrefix} from "../../ServerPrefix";
 
 const initialState = {
-    statusDisplayDress: true,
-    displayDress: {
-        __id: 1,
-        title: 'Titre du vêtement',
-        description: 'Parfait pour être classe',
-        price: 5500,
-        pathPictures: [
-            '../landingPage/baghdad.png',
-            '../landingPage/baghdad.png',
-            '../landingPage/hamza.png',
-            '../landingPage/hamza.png',
-        ],
-        sizesAndColors: [
-            {
-                title: 'S',
-                colors: [
-                    {title: 'Noir', code:"#000000", number: 5},
-                    {title: 'Bleu',code:"#0000ff", number: 3},
-                    {title: 'Rouge',code:"#ff0000", number: 2},
-                ]
-            },
-            {
-                title: 'M',
-                colors: [
-                    {title: 'Noir', code:"#000000", number: 5},
-                    {title: 'Bleu',code:"#0000ff", number: 3},
-                    {title: 'Rouge',code:"#ff0000", number: 2},
-                ]
-            },
-            {
-                title: 'L',
-                colors: [
-                    {title: 'Noir', code:"#000000", number: 5},
-                    {title: 'Bleu',code:"#0000ff", number: 3},
-                    {title: 'Rouge',code:"#ff0000", number: 2},
-                ]
-            },
-        ],
-    },
+    loadDisplayDress: true,
+    displayDress: {},
     selectedSize: "",
     selectedColor: "",
 };
+
+export const getDisplayDress = createAsyncThunk(
+    'products/download/single',
+    async (id) => {
+        const response = await axios.get(serverPrefix + "products/download/single?id="+id);
+        return response.data;
+    }
+);
 
 export const displayDressSlice = createSlice({
     name: 'displayDress',
@@ -55,13 +28,21 @@ export const displayDressSlice = createSlice({
             state.selectedColor = action.payload
         }
     },
-    extraReducers: {},
+    extraReducers: {
+        [getDisplayDress.pending] : (state) => {
+            state.loadDisplayDress = true
+        },
+        [getDisplayDress.fulfilled] : (state, action) => {
+            state.displayDress = action.payload
+            state.loadDisplayDress = false
+        },
+    },
 });
 
 export const {setSelectedSize, setSelectedColor} = displayDressSlice.actions;
 
 export const selectDisplayDress = state => state.displayDress.displayDress
-export const selectStatusDisplayDress = state => state.displayDress.statusDisplayDress
+export const selectLoadDisplayDress = state => state.displayDress.loadDisplayDress
 export const selectSelectedSize = state => state.displayDress.selectedSize
 export const selectSelectedColor  = state => state.displayDress.selectedColor
 
